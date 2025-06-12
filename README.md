@@ -22,13 +22,13 @@ API RESTful desenvolvida com **Node.js**, **Express**, **Sequelize** e **SQL Ser
 ## 📁 Estrutura do projeto
 
 backend/
-  ├── .env
-  └── src/
-        ├── config/
-        ├── controllers/
-        ├── models/
-        ├── routes/
-        └── server.js
+  ├── .env␣␣
+  └── src/␣␣
+        ├── config/␣␣
+        ├── controllers/␣␣
+        ├── models/␣␣
+        ├── routes/␣␣
+        └── server.js␣␣
 
 ## 🔐 Variáveis de ambiente
 
@@ -48,10 +48,10 @@ DB_TRUST=true
 
 Use o Postman ou qualquer cliente HTTP para testar os endpoints:
 
-POST /product → Criar produto
-GET /product → Listar produtos
-PUT /product/:id → Atualizar produto
-DELETE /product/:id → Deletar produto
+POST /product → Criar produto␣␣
+GET /product → Listar produtos␣␣
+PUT /product/:id → Atualizar produto␣␣
+DELETE /product/:id → Deletar produto␣␣
 
 (Utilize o /category para testar as categorias)
 
