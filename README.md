@@ -22,13 +22,13 @@ API RESTful desenvolvida com **Node.js**, **Express**, **Sequelize** e **SQL Ser
 ## 📁 Estrutura do projeto
 
 backend/
-  ├── .env
-  └── src/
-        ├── config/
-        ├── controllers/
-        ├── models/
-        ├── routes/
-        └── server.js
+   .env
+   src/
+      config/
+      controllers/
+      models/
+      routes/
+      server.js
 
 ## 🔐 Variáveis de ambiente
 
