@@ -19,20 +19,9 @@ API RESTful desenvolvida com **Node.js**, **Express**, **Sequelize** e **SQL Ser
 - Postman (para testes)
 - Dotenv (variáveis de ambiente)
 
-## 📁 Estrutura do projeto
-
-backend/
-   .env
-   src/
-      config/
-      controllers/
-      models/
-      routes/
-      server.js
-
 ## 🔐 Variáveis de ambiente
 
-Crie um arquivo `.env` com base no modelo abaixo:
+Crie um arquivo `.env` na raiz do projeto (no mesmo nível da pasta src), com base no modelo abaixo:
 
 ```env
 PORT=5295
@@ -44,7 +33,7 @@ DB_DIALECT=mssql
 DB_TRUST=true
 ```
 
-## Como testar a API
+## 🧪 Como testar a API
 
 Use o Postman ou qualquer cliente HTTP para testar os endpoints:
 
