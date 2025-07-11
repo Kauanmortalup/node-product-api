@@ -16,6 +16,7 @@ API RESTful desenvolvida com **Node.js**, **Express**, **Sequelize** e **SQL Ser
 - Express
 - Sequelize (ORM)
 - SQL Server
+- Docker
 - Postman (para testes)
 - Dotenv (variáveis de ambiente)
 
@@ -25,17 +26,27 @@ Crie um arquivo `.env` na raiz do projeto (no mesmo nível da pasta src), com ba
 
 ```env
 PORT=5295
-DB_USER=seu_usuario
-DB_PASSWORD=sua_senha
-DB_NAME=nome_do_banco
-DB_HOST=localhost
+DB_USER=sa
+DB_PASSWORD=123Senha123.
+DB_NAME=tempdb
+DB_HOST=db
+DB_PORT=1433
 DB_DIALECT=mssql
 DB_TRUST=true
 ```
 
-## 🧪 Como testar a API
+## 🧪 Como testar a API localmente com Docker
 
-Use o Postman ou qualquer cliente HTTP para testar os endpoints:
+1 - Clone o repositório:
+git clone https://github.com/Kauanmortalup/node-product-api.git
+cd node-product-api
+
+2 - Crie um .env na raiz do projeto com base no exemplo fornecido acima.
+
+3 - Suba os containers com Docker Compose:
+docker-compose up -d
+
+4 - Use o Postman ou qualquer cliente HTTP para testar os endpoints:
 
 - POST /product → Criar produto
 - GET /product → Listar produtos
@@ -43,4 +54,6 @@ Use o Postman ou qualquer cliente HTTP para testar os endpoints:
 - DELETE /product/:id → Deletar produto
 
 (Utilize o /category para testar as categorias)
+
+Exemplo rota completa http://localhost:5295/api/product
 
