@@ -39,7 +39,6 @@ DB_TRUST=true
 
 1 - Clone o repositório:
 git clone https://github.com/Kauanmortalup/node-product-api.git
-cd node-product-api
 
 2 - Crie um .env na raiz do projeto com base no exemplo fornecido acima.
 
