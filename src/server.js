@@ -5,6 +5,7 @@ const cors = require('cors')
 require('dotenv').config();
 const sequelize = require('./config/db')
 const routes = require("./routes");
+const runSeed = require('./seeders/seedRunner');
 
 // Inicializando Express
 const app = express();
@@ -25,6 +26,10 @@ sequelize.authenticate()
   })
   .then(() => {
     console.log("✅ Tabelas sincronizadas!");
+    return runSeed();
+  })
+  .then(() => {
+    console.log("✅ Seed executado com sucesso!");
   })
   .catch((err) => {
     console.error("❌ Erro na inicialização:", err);
